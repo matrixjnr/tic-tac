@@ -15,22 +15,33 @@ To keep track of the game state, I used a 2D array that represents the game boar
 I then added a function to check for a win condition, which loops through the board array, checking for any row, column, or diagonal that has the same symbol for the current player. If a win condition is met, the game loop breaks, and a message is displayed to the user indicating the winner.
 
 ## Tools
+
 The game was built using the following tools:
 
 (i) JavaScript: for implementing the game logic
+
 (ii) Node.js: for running the development server
+
 (iii) React: for building the user interface
+
 (iv) Jest: for testing the game logic
 
 ## Running the Project
+
 ## Usage
+
 To run the project, you will need to have Node.js and npm (the package manager for Node.js) installed on your machine. Once you have Node.js and npm set up, you can follow these steps to run the project:
 
 (i) Clone the repository to your local machine using git clone [https://github.com/matrixjnr/tic-tac.git](https://github.com/matrixjnr/tic-tac.git)
+
 (ii) Navigate to the root directory of the project using your terminal
+
 (iii) Install the required dependencies by running `npm install`
+
 (iv) Build the project using `npm run build`
+
 (v) Start the server using `npm run start`
+
 The game should now be running on [http://localhost:3000/](http://localhost:3000/)
 
 ## Testing
