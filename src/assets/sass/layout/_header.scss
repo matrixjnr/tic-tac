@@ -1,0 +1,37 @@
+// ================================================================================================
+// Header styles
+// ================================================================================================
+
+.header {
+  align-items: center;
+  gap: 25px;
+  padding: map-get($spaces, 'md') map-get($spaces, 'md') map-get($spaces, 'xxl');
+
+  @media screen and (max-width: map-get($breakpoints, 'sm')) {
+    gap: 60px;
+    padding: map-get($spaces, 'md') map-get($spaces, 'md') map-get($spaces, 'xl');
+  }
+}
+
+.header__container {
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.header__github {
+  display: block;
+  height: 40px;
+  width: 40px;
+}
+
+.header__title {
+  font-size: 8.2rem;
+  font-weight: 800;
+  @include drop-shadow(4px, 4px, 4px, map-get($colors, 'shadow', 'black-25'));
+
+  @media screen and (max-width: map-get($breakpoints, 'sm')) {
+    font-size: 5.4rem;
+    @include drop-shadow(3px, 3px, 3px, map-get($colors, 'shadow', 'black-25'));
+  }
+}

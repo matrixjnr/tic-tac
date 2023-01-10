@@ -1,0 +1,64 @@
+// ================================================================================================
+// Score styles
+// ================================================================================================
+
+.score {
+  font-size: map-get($font-sizes, 'lg');
+  gap: 50px;
+  justify-content: center;
+  padding: map-get($spaces, 'xxl') map-get($spaces, 'md') 8.2rem;
+  text-align: center;
+  white-space: nowrap;
+  @include drop-shadow(2px, 2px, 2px, map-get($colors, 'shadow', 'black-25'));
+
+  @media screen and (max-width: map-get($breakpoints, 'sm')) {
+    font-size: 2rem;
+    gap: 30px;
+    padding: map-get($spaces, 'xl') map-get($spaces, 'md') map-get($spaces, 'xxl');
+    @include drop-shadow(1px, 1px, 1px, map-get($colors, 'shadow', 'black-25'));
+  }
+}
+
+.score__container {
+  gap: 10px;
+
+  div:first-of-type {
+    align-items: center;
+  }
+
+  @media screen and (max-width: map-get($breakpoints, 'sm')) {
+    gap: 8px;
+  }
+}
+
+.score__turn {
+  filter: invert(17%) sepia(83%) saturate(7404%) hue-rotate(7deg) brightness(103%) contrast(124%); // HEX: #FF0000
+}
+
+.score__name {
+  padding: 0 1rem 0 0;
+
+  @media screen and (max-width: map-get($breakpoints, 'sm')) {
+    padding: 0 map-get($spaces, 'xs') 0 0;
+  }
+}
+
+.score__bracket {
+  height: 24px;
+  width: 6px;
+
+  @media screen and (max-width: map-get($breakpoints, 'sm')) {
+    height: 20px;
+    width: 5px;
+  }
+}
+
+.score__symbol {
+  height: 14px;
+  width: 14px;
+
+  @media screen and (max-width: map-get($breakpoints, 'sm')) {
+    height: 12px;
+    width: 12px;
+  }
+}
